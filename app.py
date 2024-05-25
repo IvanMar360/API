@@ -23,10 +23,10 @@ import joblib
 app = Flask(__name__)
 
 #Pruebas en docker mongo
-client = MongoClient('mongodb://172.17.0.2:27017/')
+#client = MongoClient('mongodb://172.17.0.2:27017/')
 
 #pruebas en local
-#client = MongoClient('mongodb://localhost:27017/')
+client = MongoClient('mongodb://localhost:27017/')
 
 db = client['challenge']  # Nombre de tu base de datos
 collection = db['challenge']

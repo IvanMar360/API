@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c87a7169-7c96-4923-9f36-edb57ba99a24" name="Changes" comment="commit" />
+    <list default="true" id="c87a7169-7c96-4923-9f36-edb57ba99a24" name="Changes" comment="commit">
+      <change afterPath="$PROJECT_DIR$/PruebasUnitarias.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Flask Main" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -47,6 +52,9 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Flask server.API.executor": "Run",
+    "Python tests.Python tests for PruebasUnitarias.TestApp.test_Machine.executor": "Run",
+    "Python tests.Python tests for PruebasUnitarias.TestApp.test_get_data.executor": "Run",
+    "Python tests.Python tests for PruebasUnitarias.TestApp.test_hr_prediccion.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/PC/PycharmProjects/API",
@@ -64,7 +72,7 @@
       <recent name="C:\Users\PC\PycharmProjects\API\.venv" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python tests.Python tests for PruebasUnitarias.TestApp.test_hr_prediccion">
     <configuration name="API" type="Python.FlaskServer">
       <module name="API" />
       <option name="target" value="$PROJECT_DIR$/app.py" />
@@ -81,6 +89,61 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for PruebasUnitarias.TestApp.test_Machine" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="API" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;PruebasUnitarias.TestApp.test_Machine&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for PruebasUnitarias.TestApp.test_get_data" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="API" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;PruebasUnitarias.TestApp.test_get_data&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for PruebasUnitarias.TestApp.test_hr_prediccion" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="API" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;PruebasUnitarias.TestApp.test_hr_prediccion&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for PruebasUnitarias.TestApp.test_hr_prediccion" />
+        <item itemvalue="Python tests.Python tests for PruebasUnitarias.TestApp.test_Machine" />
+        <item itemvalue="Python tests.Python tests for PruebasUnitarias.TestApp.test_get_data" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -98,7 +161,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716668752886</updated>
-      <workItem from="1716668756420" duration="2063000" />
+      <workItem from="1716668756420" duration="3140000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -124,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716670440900</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit">
+      <option name="closed" value="true" />
+      <created>1716670976639</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716670976639</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +207,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/API$.coverage" NAME=" Coverage Results" MODIFIED="1716672203462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/API$API.coverage" NAME="API Coverage Results" MODIFIED="1716669221215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
