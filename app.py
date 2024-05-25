@@ -150,53 +150,6 @@ def  Machine():
                                'StandardHours',
                                'TotalWorkingYears'], inplace=True)
     collaborator.to_json(orient="records")
-
-    example = {"Age": 22,
-               "BusinessTravel": "Travel_Frequently",
-               "DailyRate": 29,
-               "Department": "Research & Development",
-               "DistanceFromHome": 15,
-               "Education": 3,
-               "EducationField": "Life Sciences",
-               "EmployeeNumber": 6569999,
-               "EnvironmentSatisfaction": 13,
-               "Gender": "Male",
-               "HourlyRate": 61,
-               "JobInvolvement": 2,
-               "JobRole": "Research Scientist",
-               "JobSatisfaction": 1,
-               "MaritalStatus": "Married",
-               "MonthlyIncome": 51,
-               "MonthlyRate": 24907,
-               "NumCompaniesWorked": 1,
-               "OverTime": "Yes",
-               "PercentSalaryHike": 23,
-               "PerformanceRating": 4,
-               "RelationshipSatisfaction": 4,
-               "StockOptionLevel": 1,
-               "TrainingTimesLastYear": 3,
-               "WorkLifeBalance": 3,
-               "YearsAtCompany": 5,
-               "YearsInCurrentRole": 2,
-               "YearsSinceLastPromotion": 5,
-               "YearsWithCurrManager": 2}
-
-    new_example = json.dumps(example)
-    # Use an existing example in the dataset:
-    # data = json.loads(request)
-
-    # Use the new example:
-    data = json.loads(new_example)
-
-    def hr_predict(request):
-        df = pd.DataFrame([request])
-        ID = df['EmployeeNumber'][0]
-        df.drop(columns=['EmployeeNumber'], inplace=True)
-        prediction = clf.predict_proba(df)  #
-        output = {'ID': ID, 'prediction': list(prediction[:, 1])[0]}
-        return output
-
-
     # Seleccionar una colección
     prueba = hrdata[['EmployeeNumber', 'turnover_score']].to_dict(orient='records')
 
