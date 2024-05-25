@@ -49,7 +49,7 @@ def get_data():
     }
     return jsonify(employee_data)
 
-# Método POST para agregar datos
+# Método POST para agregar datos se requiere un json
 @app.route('/Agregar', methods=['POST'])
 def hr_prediccion():
     content = request.json
@@ -64,7 +64,7 @@ def hr_prediccion():
 
     return 'Agregado Correctamente!'
 
-# Método POST para ML
+# Método para ML
 @app.route('/ML', methods=['GET'])
 def  Machine():
     np.random.seed(2024)
