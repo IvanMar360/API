@@ -49,7 +49,7 @@ def get_data():
     }
     return jsonify(employee_data)
 
-# Método POST para agregar datos se requiere un json
+# Método POST para predecir el score del empleado, requiere un json y almacena los datos calculados en mongodb
 @app.route('/Agregar', methods=['POST'])
 def hr_prediccion():
     content = request.json
@@ -64,7 +64,7 @@ def hr_prediccion():
 
     return 'Agregado Correctamente!'
 
-# Método para ML
+# Método para ML, este metodo entrena y guarda en la base de datos el numero de empleado y su calificacion
 @app.route('/ML', methods=['GET'])
 def  Machine():
     np.random.seed(2024)
@@ -150,7 +150,10 @@ def  Machine():
                                'StandardHours',
                                'TotalWorkingYears'], inplace=True)
     collaborator.to_json(orient="records")
-    # Seleccionar una colección
+
+
+    #guarda los datos de la prediccion de todos los usuarios en la base de datos
+
     prueba = hrdata[['EmployeeNumber', 'turnover_score']].to_dict(orient='records')
 
     collection.insert_many(prueba)
